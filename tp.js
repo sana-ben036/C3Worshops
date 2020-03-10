@@ -1,26 +1,53 @@
-// question 1 et 2 ...........................................
 
-// var bookName = "Great";
-// var favoriteBook = [" "];
 
-// function addFavoriteBook(bookName){
-//     if(bookName !== "Great"){
-//         favoriteBook.push("Great");
-//     }else{
+
+
+function addFavoriteBook(bookName) {
+
+    var favoriteBooks = ["k", "m", "c"];
+    var bookName = favoriteBooks.includes("Great")
+
+    if (bookName == false) {
+        favoriteBooks.push("Great");
+    } else {
+        console.log("It already exists");
+
+    }
+
+    function printFavoritBooks() {
+        var a = favoriteBooks.length;
+        console.log("livres"+" "+"favoris:"+ a);
+        for (let value of favoriteBooks) {
+            console.log(value);
+        }
+        
+    }printFavoritBooks()
+
+
+}addFavoriteBook()
+
+
+
+// test test test ...........................................
+
+// function addFavoriteBook(bookName) {
+
+//     if (favoriteBooks !== bookName) {
+//         favoriteBooks.push(bookName);
+//     } else {
 //         alert("exist");
-//         } 
-
-// }addFavoriteBook();
-// console.log(favoriteBook);
+//     }
 
 
-
+// }
+// addFavoriteBook();
+// console.log(favoriteBooks);
 // question 3 et 4 ..............................................   
 
 // var favoriteBook = ["k","m","c"];
 
 // function printFavoriteBooks(){
-//     var a = favoriteBook.length;
+//     var a = favoriteBooks.length;
 //     console.log("livres"+" "+"favoris:"+ a);
 
 
@@ -28,15 +55,32 @@
 
 // question 5 ..............................................  
 
-var favoriteBook = ["k","m","c"];
-var a = favoriteBook.length;
-var i;
+// var favoriteBooks = ["k","m","c"];
+// var a = favoriteBooks.length;
+// var i;
+// var favoriteBooks = ["k","m","c"];
+// function printFavoriteBooks(){
 
-function printFavoriteBooks(){
-    
-    for(var i=0; i< a ; i++){
-       console.log(bookName);
+//     for(var i=0; i< a ; i++){
+//        alert(bookName);
 
-    }
-}printFavoriteBooks();
+//     }
+// }printFavoriteBooks();
 
+
+
+// var a = favoriteBooks.length;
+// var i;
+
+// function printFavoriteBooks() {
+//     for (let favoriteBook of favoriteBooks) {
+//         console.log(favoriteBook);
+
+//     }
+
+//     // for(var i=0; i< a ; i++){
+//     //    console.log(favoriteBook);
+
+
+// }
+// printFavoriteBooks();
