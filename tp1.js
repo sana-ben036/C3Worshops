@@ -5,9 +5,9 @@
 function addFavoriteBook(bookName) {
 
     var favoriteBooks = ["k", "m", "c"];
-    var bookName = favoriteBooks.includes("Great")
+    var search = favoriteBooks.includes("Great")
 
-    if (bookName == false) {
+    if (search !== true) {
         favoriteBooks.push("Great");
     } else {
         console.log("already exists");
@@ -15,10 +15,10 @@ function addFavoriteBook(bookName) {
     }
 
     function printFavoritBooks() {
-        var a = favoriteBooks.length;
-        console.log("livres"+" "+"favoris:"+ a);
-        for (let favoriteBook of favoriteBooks) {
-            console.log(favoriteBook);
+        var total = favoriteBooks.length;
+        console.log("livres favoris:"+" "+ total);
+        for (let bookName of favoriteBooks) {
+            console.log(bookName);
         }
         
     }printFavoritBooks()
