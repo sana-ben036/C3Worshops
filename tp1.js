@@ -1,6 +1,6 @@
 
 
-// ................................Enoncée 1.....................................................
+// ................................Enoncé 1.....................................................
 
 function addFavoriteBook(bookName) {
 
@@ -10,15 +10,15 @@ function addFavoriteBook(bookName) {
     if (bookName == false) {
         favoriteBooks.push("Great");
     } else {
-        console.log("It already exists");
+        console.log("already exists");
 
     }
 
     function printFavoritBooks() {
         var a = favoriteBooks.length;
         console.log("livres"+" "+"favoris:"+ a);
-        for (let value of favoriteBooks) {
-            console.log(value);
+        for (let favoriteBook of favoriteBooks) {
+            console.log(favoriteBook);
         }
         
     }printFavoritBooks()
@@ -26,7 +26,6 @@ function addFavoriteBook(bookName) {
 
 }addFavoriteBook()
 
-// ................................Enoncée 2.....................................................
 
 
 
