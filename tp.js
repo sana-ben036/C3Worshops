@@ -1,30 +1,44 @@
 
 
 // ................................Enoncé 1.....................................................
-
-function addFavoriteBook(bookName) {
-
-    var favoriteBooks = ["k", "m", "c"];
-    var search = favoriteBooks.includes("Great")
-
-    if (search !== true) {
-        favoriteBooks.push("Great");
-    } else {
-        console.log("already exists");
-
+class Bookshelf{
+    constructor(addFavoriteBook, printFavoritBooks){
+        this.addFavoriteBook=addFavoriteBook;
+        this.printFavoritBooks=printFavoritBooks;
     }
+    
+}
 
-    function printFavoritBooks() {
-        var total = favoriteBooks.length;
-        console.log("livres favoris:"+" "+ total);
-        for (let bookName of favoriteBooks) {
-            console.log(bookName);
-        }
+
+
+    
+
+        function addFavoriteBook(bookName) {
+
+            let favoriteBooks = [String(105), "m", "c"]; // conversion explicite (string(105))
+            let search = favoriteBooks.includes("Great")
         
-    }printFavoritBooks()
+            if (search !== true) {
+                favoriteBooks.push("Great");
+            } else {
+                console.log("already exists");
+        
+            }
+        
+            function printFavoritBooks() {
+                let total = favoriteBooks.length;
+                console.log(`livres favoris: ${total}`);
+                for (let bookName of favoriteBooks) {
+                    console.log(bookName, typeof bookName); // afficher le book et son type
+                    
+                }
+                
+            }printFavoritBooks()
+        }addFavoriteBook()
+
+ 
 
 
-}addFavoriteBook()
 
 
 
