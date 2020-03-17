@@ -1,39 +1,27 @@
-function nextInLine (arr,item) {
 
-    arr= [];
 
-    for (item=1 ; item<arr.length; item++)
-
-       arr.push(item);
-       arr.push(arr[0])
-       arr.shift();
-        
-        console.log(arr);
-    
-
-}nextInLine()
- 
  
 
  
  /*.................................................................
-  Enoncé 3
+  Enoncé 3 complet
 ................................................................. 
  
- function nextInLine (arr,item) {
+function nextInLine (arr,item) {
 
-     arr= [1,2,3,4];
-     item= arr[item];
+    arr= [ ];
+    item= Number();
 
-     for( item=0 ; item<arr.length ; item++){
-        arr.push(arr[0]);
-        arr.shift();
-         
-         console.log(arr);
-     }
+    for( item=0 ; arr.length<10 ; item++){
+       arr.push(item); 
+       arr.push(arr[0]);
+       arr.shift();
+        
+        console.log(arr);
+    }
 
 
- }nextInLine()
+}nextInLine() 
  
  */
  
@@ -84,7 +72,7 @@ function loadBooks (Bookshelf){
 
 
 /* ...............................................................
-  Enoncé 1
+  Enoncé 1 complet
  ................................................................. 
 
 
