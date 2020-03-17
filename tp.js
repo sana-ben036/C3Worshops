@@ -1,6 +1,49 @@
+function nextInLine (arr,item) {
+
+    arr= [];
+
+    for (item=1 ; item<arr.length; item++)
+
+       arr.push(item);
+       arr.push(arr[0])
+       arr.shift();
+        
+        console.log(arr);
+    
+
+}nextInLine()
+ 
+ 
+
+ 
+ /*.................................................................
+  Enoncé 3
+................................................................. 
+ 
+ function nextInLine (arr,item) {
+
+     arr= [1,2,3,4];
+     item= arr[item];
+
+     for( item=0 ; item<arr.length ; item++){
+        arr.push(arr[0]);
+        arr.shift();
+         
+         console.log(arr);
+     }
+
+
+ }nextInLine()
+ 
+ */
+ 
+ 
+ 
+ 
+ 
  /*.................................................................
   Enoncé 2 test
-................................................................. */
+................................................................. 
 
 let favoriteBooks = [String(105), "m", "c"]; // conversion explicite (string(105))
 
@@ -35,8 +78,8 @@ class Bookshelf {
 }
 function loadBooks (Bookshelf){
 
-    
-}
+
+} */
 
 
 
