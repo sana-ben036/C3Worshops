@@ -1,5 +1,9 @@
 
-/* ...................test.....*/
+/* ...................test.....
+- tableau associatif??
+-tableau a deux dimension??
+
+*/
 
 
 function updateRecords(id, prop, valeur) {
